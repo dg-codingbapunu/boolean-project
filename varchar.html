@@ -3,26 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>function</title>
   </head>
   <body>
     <script>
-      let age = 21;
-      let gender = "male"; // male and female
-      let finalDiscount;
-      if (age <= 5) {
-        finalDiscount = 100;
-      } else if (gender === "female") {
-        finalDiscount = 50;
-      } else if (age <= 8) {
-        finalDiscount = 50;
-      } else if (age >= 65) {
-        finalDiscount = 30;
-      } else {
-        finalDiscount = 0;
+      let age = 22;
+      function printage() {
+        console.log(`ypur real age is${age}`);
       }
-      // start console syntax
-      console.log(`your final discount is ${finalDiscount}`);
+      printage();
+
+      age = 40;
+      printage();
+      age = 30;
+      printage();
+
+      age = 50;
+      printage();
     </script>
   </body>
 </html>
