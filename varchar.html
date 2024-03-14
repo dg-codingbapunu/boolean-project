@@ -7,17 +7,15 @@
   </head>
   <body>
     <script>
-      // function sum(a, b) {
-      //   let sum = a + b;
-      //   return sum;
-      // }
-      // console.log(sum(4, 5));
-      // console.log(sum(4, 5));
-      // console.log(sum(41, 5));
-      // console.log(sum(45, 5));
-      function greeting(name = "sinu") {
-        console.log(`Namaste ${name} uncle`);
+      function isodd(number) {
+        let rem = number % 2;
+        let isodd = rem == 1;
+        return isodd;
       }
+      console.log(isodd(5));
+      console.log(isodd(59));
+      console.log(isodd(52));
+      console.log(isodd(50));
     </script>
   </body>
 </html>
